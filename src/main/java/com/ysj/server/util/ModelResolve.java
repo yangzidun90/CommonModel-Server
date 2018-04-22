@@ -2,11 +2,12 @@ package com.ysj.server.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import com.ysj.server.model.ColumnModel;
 import com.ysj.server.model.DxModel;
-
+@Component
 public class ModelResolve {
 	private static final Logger logger = LoggerFactory.getLogger(ModelResolve.class);
 	public boolean executeDDL(DxModel m) {
